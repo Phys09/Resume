@@ -1,0 +1,1 @@
+Python, Java, Javascript/Typescript, C, C#, HTML, LaTeX, Markdown, R, Flask, Sqlite3, React, JavaFX, Numpy, Git, Visual Studio, Vim, Eclipse, Google Collab, Jupyter, RStudio, Pycharm, Windows, Linux/Unix

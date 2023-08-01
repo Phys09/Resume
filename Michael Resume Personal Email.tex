@@ -1,0 +1,184 @@
+\documentclass[10pt]{article}
+
+\usepackage[T1]{fontenc} % Allows pipe character and other fonts
+\usepackage[dvipsnames]{xcolor} % Allow Colour
+\usepackage[hidelinks]{hyperref} % Allows links
+\usepackage[margin=0.2in]{geometry}
+\usepackage{enumitem} % Change enumeration spacing etc...
+\usepackage{multicol} % Allow multicolumns
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{tgbonum}
+
+
+\titleformat{\section}
+{\large\bfseries\color{black}} % Section colour
+{}
+{0em}
+{}[\color{black}\titlerule]
+
+\titleformat{\subsection}
+[runin] % Text on same line
+{\bfseries}
+{}
+{0em}
+{}
+
+\titleformat{\subsubsection}
+{\bfseries}
+{}
+{1em}
+{}
+
+\titlespacing\section{0pt}{8pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\titlespacing\subsection{0pt}{4pt plus 2pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\titlespacing{\subsubsection}{0em}{1em}{0em}
+
+\setlist[itemize]{noitemsep, topsep=0pt} % Globally remove spacing between itemize
+\raggedcolumns % Turn off stretching columns to fill after columnbreak
+
+\renewcommand{\familydefault}{\sfdefault} % Default sans serif font
+\renewcommand{\maketitle}{
+    \begin{flushleft}{\Huge\bfseries\theauthor}
+    \end{flushleft}
+
+    \begin{center}
+        \vspace{-8pt}
+        michaelkwan1238@gmail.com | \href{https://github.com/Phys09}{github.com/Phys09} | 647 882 8209 | Richmond Hill ON L4E3X5
+        \vspace{2pt}
+        \rule[9pt]{\textwidth}{1.5pt}
+        \vspace{1pt}
+    \end{center}
+}
+
+\renewcommand\labelitemi{-} % Rename what is put in front of itemize
+
+\pagenumbering{gobble} % Disable Page Numbering
+
+
+% ====== BEGIN DOCUMENT ======
+\begin{document}
+
+\title{R\'esum\'e}
+\author{
+  \fontsize{16}{4pt}\selectfont Michael Kwan
+}
+
+\maketitle
+\vspace{-40pt}
+
+\section{Skills}
+\subsection{Languages:}
+Python | Java | Javascript/Typescript | C | C\# | HTML | LaTeX | Markdown | R
+\subsection{Libraries/Frameworks:}
+Flask | Sqlite3 | React | JavaFX | Numpy
+\subsection{Tools:}
+Git | Visual Studio | Vim | Eclipse | Google Collab | Jupyter | RStudio | Pycharm
+\subsection{Operating Systems:}
+Windows | Linux/Unix (Ubuntu)
+
+\subsection{Familiarity With:}
+Neo4j | PostgreSQL
+
+\section{Education}
+
+\subsection{University of Toronto Mississauga, Honours Bachelor of Science - Mathematics (2018 - Present)}
+\begin{itemize}
+  \item Relevant courses in Software Engineering, Software Design, Data Structures and Algorithms, Systems Programming, \\
+        Theory of Computation, Computer Organization.
+        % TA APPLICATION: \item Computer Science courses: CSC108, CSC148, CSC207, CSC209, CSC263, CSC301, CSC302, CSC311 % Remember to Remove!
+\end{itemize}
+
+% ===== BEGIN TA APPLICATION =====
+%
+% \section{Teaching Related Experience:}
+% \subsection{UTM Simpledoc Project}
+% \begin{itemize}
+%     \item Contributed towards the University of Toronto Mississauga Simpledoc project, which had the goal of simply explaining introductory python + computer science concepts to first year students.
+%     \item Created a page on trees which introduced its definition, the types of traversal algorithms, and how they can be implemented in python.
+%     \item Showed ability to introduce popular data structures such as trees, through the creation of the page.
+% \end{itemize}
+%
+% \subsection{Introduction to Technology}
+% \begin{itemize}
+%     \item Introduced various concepts related to technology such as how programs work, how they run, and how to configure them to an elderly group of people.
+%     \item Guided individuals 1-on-1 on how to setup their computers, allowing them to run programs of their choosing and remember how it was done.
+%     \item Increased independence of those who were taught by reducing their reliance on others to help them with technology-related issues.
+% \end{itemize}
+%
+% \section{Course Achievements}
+% \subsection{Introduction to Computer Science CSC148H5}
+% \begin{itemize}
+%     \item Demonstrated proficiency in python and object oriented programming with an understanding of core data structures
+%           and complexity, achieving a grade of 81\% and 80\% in the respective courses.
+%     \item Developed a python top-down RPG game using the library pygame using the recently taught object oriented concepts that was well documented and tested.
+% \end{itemize}
+%
+% ====== END OF TA APPLICATION =====
+\section{Team-Related Development Experience}
+
+%     \subsection{House Price Estimator (Python, Numpy)}
+%     \begin{itemize}
+%         \item Worked on a program that would take existing training data, to then estimate future house prices
+%         using k-nearest-neighbours, and linear regression.
+%     \end{itemize}
+
+% Sigmatech banking application with Abtin, Peter + the boys
+\subsection{SigmaTech Banking Application (Javascript, CSS, React, PostgreSQL) \hfill Winter 2022}
+\begin{itemize}
+  \item Collaborated in a team of 7 to create the frontend and backend of a banking web application following the SCRUM software development life cycle.
+  \item Built with a React frontend, and a PostgreSQL + Nodejs backend, allows users to manage account information, transfer money, apply for loans, and more.
+        Contributions include the creation + design of webpages to interact with database endpoints designed by the backend team.
+        % -- Unnecessary fluff -- \item Made to further deepen knowledge and understanding of how react web applications are made, and how databases can be integrated seamlessly into the web app.
+\end{itemize}
+
+% CSC302 Final Assignment with group members jeremiah, and menghao. Data visualization tool
+\subsection{Data Visualization Tool (Python, Flask, React, CSS) \hfill Fall 2022}
+\begin{itemize}
+  \item Collaborated in a 3-person team to create a data visualization react web app that displays a dataset on a graph.
+  \item With a backend server written in python using flask and sqlite3, data was taken from a dataset, and added to a SQL database to be later accessed through endpoints.
+  \item Contributions consist of the creation of endpoints on the backend flask server allowing the frontend to display the data stored in the database.
+\end{itemize}
+
+\subsection{Careconnect (Javascript, React, CSS) \hfill Spring 2023}
+\begin{itemize}
+  \item Built with React and Javascript in a team of 4 for the 2023 Deerhacks hackathon, created a website which pairs users with a personal support worker (PSW) based on needs, location, language, and situation.
+  \item Responsibilities included the creation + formatting of pages, algorithm debugging + testing.
+\end{itemize}
+
+\subsection{Othello Board Game (Java, JavaFX) \hfill Fall 2019}
+\begin{itemize}
+  \item With Java, implemented the game Othello in a team of 5 following the SCRUM software development cycle.
+  \item Produced a full GUI using the JavaFX library, filled with animations where players could play a game vs other players, or choose from multiple ai opponents.
+\end{itemize}
+
+\section{Other Experience}
+% CSC301 Assignment 1, using dagger for dependency injection to implement the 6 degrees of Kevin bacon
+\subsection{6 Degrees of Kevin Bacon (Java, Neo4j, Dagger2) \hfill Winter 2022}
+\begin{itemize}
+  \item Implemented the 6 degrees of Kevin Bacon, which connected the actor Kevin Bacon to other actors through at most 6 actors.
+  \item Written in Java, the program used dagger2, a dependency injection framework to supply the components of the program. These included the neo4j
+        data-access object, the server, and the request handlers.
+\end{itemize}
+
+\subsection{Simulated File System (C) \hfill Winter 2020}
+\begin{itemize}
+  \item Using the C programming language, and binary I/O functions, created a simulated filesystem where a user would be able to create, delete, and search for files in the binary file database.
+  \item The program stored information in a binary file, and the program would modify, or read the file to perform operations, similarly to an actual file system.
+  \item Gained a better understanding of how computers read/write data to and from files, how Linux file systems store data, and how they are accessed.
+\end{itemize}
+
+\subsection{Paint Application (Java, JavaFX) \hfill Fall 2019}
+\begin{itemize}
+  \item Using object-oriented design patterns (Model-view-controller, Factory) created a java paint application where users could paint on the screen using different brushes/tools.
+  \item Created a complete GUI using the JavaFX library.
+\end{itemize}
+
+\subsection{Pythonic RPG (Python) \hfill Summer 2019}
+\begin{itemize}
+  \item Using python 3, and the pygame library, created a top-down RPG game where the player controlled a character to complete levels by completing objectives, and getting to the end.
+  \item The pygame library was used to create game objects such as walls the player needed to move around, enemies to avoid, objectives to collect, and items to push around.
+\end{itemize}
+\end{document}
